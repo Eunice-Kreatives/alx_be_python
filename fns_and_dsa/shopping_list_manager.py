@@ -1,18 +1,25 @@
 # shopping_list_manager.py
 
+def display_menu():
+    """
+    Displays the main menu options for the shopping list manager.
+    """
+    print("\n--- Shopping List Manager ---")
+    print("1. Add item")
+    print("2. Remove item")
+    print("3. View list")
+    print("4. Exit")
+    print("-----------------------------")
+
 def main():
     """
     Manages a simple shopping list, allowing users to add, view, and remove items.
     """
-    shopping_list = [] 
+    shopping_list = [] # Initialize an empty list to store shopping items
+
 
     while True: 
-        print("\n--- Shopping List Manager ---")
-        print("1. Add item")
-        print("2. Remove item")
-        print("3. View list")
-        print("4. Exit")
-        print("-----------------------------")
+        display_menu()
 
         choice = input("Enter your choice (1-4): ")
 
