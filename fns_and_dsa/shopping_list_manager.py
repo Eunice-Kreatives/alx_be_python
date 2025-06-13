@@ -1,23 +1,19 @@
 # shopping_list_manager.py
 
 def display_menu():
-    """
-    Displays the main menu options for the shopping list manager.
-    """
+
     print("\n--- Shopping List Manager ---")
     print("1. Add item")
     print("2. Remove item")
     print("3. View list")
     print("4. Exit")
     print("-----------------------------")
-
-def main():
-    """
-    Manages a simple shopping list, allowing users to add, view, and remove items.
-    """
-    shopping_list = [] # Initialize an empty list to store shopping items
-
-
+        
+    
+    
+def shopping_list_menu():
+  
+    shopping_list =[]
     while True: 
         display_menu()
 
@@ -40,7 +36,7 @@ def main():
                 print(f"'{item_to_remove}' was not found in your list.")
 
         elif choice == '3':
-            print("\n--- Your Shopping List ---")
+            print ("\n--- Your Shopping List ---")
             if not shopping_list:
                 print("Your shopping list is empty.")
             else:
@@ -56,7 +52,7 @@ def main():
             print("Invalid choice. Please enter a number between 1 and 4.")
 
 if __name__ == "__main__":
-    main()
+    shopping_list_menu()
 
 
 
