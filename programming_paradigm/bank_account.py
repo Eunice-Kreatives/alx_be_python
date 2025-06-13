@@ -28,8 +28,7 @@ class BankAccount:
             amount (float): The amount to deposit. Must be positive.
         """
         if amount > 0:
-            self.__account_balance += amount
-            
+            self.__account_balance += amount 
             print(f"Deposited: ${amount:.1f}")
         else:
             print("Deposit amount must always be positive.")
@@ -46,11 +45,9 @@ class BankAccount:
         """
         if amount <= 0:
             print("Withdrawal amount must be positive.")
-            return False
         elif self.__account_balance >= amount:
             self.__account_balance -= amount
             print(f"Withdrew: ${amount:.1f}")
-            return True
         else:
             return False
 
