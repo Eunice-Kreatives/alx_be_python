@@ -35,7 +35,7 @@ def calculate_future_date():
     future_date = current_date_only + timedelta(days=days_to_add)
     formatted_future_date = future_date.strftime("%Y-%m-%d")
 
-    print(f"Future Date ({days_to_add} days from now): {formatted_future_date}")
+    print(f"{days_to_add} days from now: {formatted_future_date}")
 
 if __name__ == "__main__":
   display_current_datetime()

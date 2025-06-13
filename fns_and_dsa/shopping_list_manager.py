@@ -13,7 +13,7 @@ def display_menu():
     
 def shopping_list_menu():
   
-    shopping_list =[]
+    shopping_list = []
     while True: 
         display_menu()
 
