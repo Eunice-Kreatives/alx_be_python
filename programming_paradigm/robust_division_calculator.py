@@ -19,13 +19,13 @@ def safe_divide(numerator, denominator):
         return f"The result of the division is {result}"
     
     except ZeroDivisionError:
-        return "Error: Cannot be divided by zero"
+        print("Error: Cannot be divided by zero") 
         
     except ValueError:
-        return "Please, enter numeric values only"
+        print("Please, enter numeric values only")
 
     except Exception as e:
-        return f"An unexpected error occured :{e}"
+        print(f"An unexpected error occured :{e}")
 
 if __name__ =="__main__" :
     print("--- Testing safe_divide directly ---")
