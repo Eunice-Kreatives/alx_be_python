@@ -29,7 +29,7 @@ class Book:
     
 class Library:
     def __init__(self):
-        self.__books = []
+        self._books = []
     def add_book(self, book):
         """Adds a Book object to the library's collection."""
         if isinstance(book, Book):
