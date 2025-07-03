@@ -1,8 +1,8 @@
 # shopping_list_manager.py
 
 def display_menu():
-
-    print("--- Shopping List Manager ---")
+    print("Shopping List Manager") # Just the plain string, no surrounding dashes or newlines
+    print("\n--- Shopping List Menu ---") # You can add a separate line for the decorative dashes if desired
     print("1. Add item")
     print("2. Remove item")
     print("3. View list")
